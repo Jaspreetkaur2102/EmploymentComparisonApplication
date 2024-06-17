@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.geometry.Insets?>
+        <?import javafx.scene.chart.BarChart?>
+        <?import javafx.scene.chart.CategoryAxis?>
+        <?import javafx.scene.chart.NumberAxis?>
+        <?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.TableColumn?>
+        <?import javafx.scene.control.TableView?>
+        <?import javafx.scene.layout.HBox?>
+        <?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.employmentcomparisonapplication.EmploymentComparisonController">
+<padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+</padding>
+<children>
+    <BarChart fx:id="employmentRateChart" title="Employment Rate: Alberta vs. Ontario">
+        <xAxis>
+            <CategoryAxis side="BOTTOM" label="Year"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT" label="Employment Rate (%)"/>
+        </yAxis>
+    </BarChart>
+    <TableView fx:id="employmentRateTable" visible="false">
+        <columns>
+            <TableColumn fx:id="provinceColumn" text="Province"/>
+            <TableColumn fx:id="yearColumn" text="Year"/>
+            <TableColumn fx:id="rateColumn" text="Employment Rate (%)"/>
+        </columns>
+    </TableView>
+    <HBox spacing="20.0" alignment="CENTER">
+        <children>
+            <Button fx:id="switchViewButton" mnemonicParsing="false" text="Switch View" onAction="#switchView" />
+        </children>
+    </HBox>
+</children>
+</VBox>

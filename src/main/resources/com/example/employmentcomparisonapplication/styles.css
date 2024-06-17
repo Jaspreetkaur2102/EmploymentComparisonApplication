@@ -1,0 +1,60 @@
+
+/* styles.css */
+
+/* General application styling */
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f0f0f0;
+}
+
+/* BarChart styling */
+.bar-chart {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-border-color: #d4d4d4;
+    -fx-border-width: 1px;
+}
+
+.chart-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.axis-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.axis-tick-mark {
+    -fx-stroke: #888888;
+}
+
+.chart-plot-background {
+    -fx-background-color: #f9f9f9;
+}
+
+.chart-legend {
+    -fx-font-size: 12px;
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-border-color: #d4d4d4;
+    -fx-border-width: 1px;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #6200ea;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #
